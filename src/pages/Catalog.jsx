@@ -1,39 +1,32 @@
 import Card from "../components/Card";
 
 export default function Catalog() {
-  const array = [
+  const shoes = [
     {
-      price: 100,
-      size: "xs",
-      photo: "/favicon.svg",
-      category: "T-Shirt",
+      id: 1,
+      brand: "Nike",
+      model: "Air Max 270",
+      size: 42,
+      color: "Black",
+      price: 350,
+      category: "Sneakers",
+      inStock: true,
     },
     {
-      price: 99,
-      size: "M",
-      photo: "/favicon.svg",
-      category: "T-Shirt",
+      id: 2,
+      brand: "Adidas",
+      model: "Ultraboost 22",
+      size: 43,
+      color: "White",
+      price: 420,
+      category: "Running",
+      inStock: true,
     },
-    
   ];
-
- 
-
-  // შექმენით მასივი  სახელად X რომელშიც ეწერება 5 რიცხვი
-  // შექმენით y ცვლადი რომლის პასუხიც იქნება x ის მაპი სადაც თითოეული რიცხვი გამრავლებულია ორზე 
-  // console.log ში ჩაწერეთ y 
-
-
-
-  object.map((item) => item )
-
-
 
   return (
     <>
-      <Card data={array} />
- 
-      
+      <Card shoes={shoes} />
     </>
   );
 }

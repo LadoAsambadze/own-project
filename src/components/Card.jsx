@@ -1,14 +1,25 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Card(props) {
+  const navigate = useNavigate();
+
+  function GetDetails(item) {
+    navigate(`/catalog/${item.id}`);
+
+
+ 
+  }
+
   return (
     <>
-      {props.data.map((item) => (
-        <div>
-          <h1>price: {item.price}</h1>
-          <h1>price: {item.size}</h1>
-          <h1>price: {item.category}</h1>
-          <img src={item.photo} />
+      {props.shoes.map((item) => (
+        <div className="p-10 border-4 " onClick={() => GetDetails(item)}>
+          <h1>{item.brand}</h1>
+          <h1>{item.model}</h1>
         </div>
       ))}
     </>
   );
 }
+
+
