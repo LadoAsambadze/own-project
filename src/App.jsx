@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
 import Home from "./pages/Home";
-import Catalog from "./pages/catalog";
+import Catalog from "./pages/Catalog";
 import Product from "./pages/Product";
 
 export default function App() {
